@@ -1,0 +1,224 @@
+.input {
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 100%;
+  max-width: 300px;
+  font: 16px sans-serif;
+  text-align: center;
+  cursor: text;
+  margin-bottom: 1px;
+}
+
+  .input > input, .input > span, .input > em {
+      transition: all 300ms cubic-bezier(0.66, 0, 0.07, 1);
+    }
+
+  .input input {
+    font: 16px sans-serif;
+    background: #000;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 5px 10px 0;
+    box-sizing: border-box;
+  }
+
+  .input > span {
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+
+    color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+  }
+
+  .input > span i {
+      font-style: normal;
+      opacity: 0.5;
+    }
+
+  .input > em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #D52917;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-style: normal;
+
+    /* fade out */
+    visibility:hidden;
+    opacity:0;
+    transition:
+      visibility 0s cubic-bezier(0.66, 0, 0.07, 1) 300ms,
+      all 300ms cubic-bezier(0.66, 0, 0.07, 1) 0;
+  }
+
+  .input.input-message > em {
+    /* fade in */
+    visibility:visible;
+    opacity:1;
+    transition:
+      visibility 0s cubic-bezier(0.66, 0, 0.07, 1) 300ms,
+      all 300ms cubic-bezier(0.66, 0, 0.07, 1) 0;
+  }
+
+  .input:hover > input {
+        color: #ddd;
+        background: rgb(17, 17, 17);
+      }
+
+  .input:hover > span {
+        color: #ddd;
+      }
+
+  .input input:focus {
+    background: #222;
+    color: #ddd;
+  }
+
+  .input.input-value > span, .input input:focus + span {
+    -webkit-transform: scale(0.6) translateY(-20%) !important;
+            transform: scale(0.6) translateY(-20%) !important;
+  }
+
+  .input.input-value > span {
+    color: rgb(166, 166, 166);
+  }
+
+  .input input:focus + span {
+    color: #fff;
+  }
+
+  .input.error input {
+    background: #D52917 !important;
+    color: #000 !important;
+  }
+
+  .input input:disabled {
+    color: rgb(128, 128, 128);
+  }
+.input-pop {
+  position: absolute;
+  width: 100%;
+  background: #000;
+
+  visibility:hidden;
+    opacity:0;
+    transition:
+      visibility 0s cubic-bezier(0.66, 0, 0.07, 1) 300ms,
+      all 300ms cubic-bezier(0.66, 0, 0.07, 1) 0s;
+}
+.input-pop-up {
+  bottom: 41px;
+}
+.input-pop-down {
+  top: 41px;
+}
+.input-pop-active .input-pop {
+  visibility:visible;
+  opacity:1;
+  transition:
+    visibility 0s cubic-bezier(0.66, 0, 0.07, 1) 300ms,
+    all 300ms cubic-bezier(0.66, 0, 0.07, 1) 0s;
+}
+.calendar {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  font: normal 16px sans-serif;
+  background: #000;
+    text-transform: uppercase;
+}
+.calendar a {
+    text-decoration: none;
+    color: #fff;
+  }
+.calendar-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75em;
+}
+.calendar-flip {
+  padding-top: 0.75em;
+}
+.calendar-flip .calendar-header {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+.calendar-button,
+.calendar-mode {
+  display: block;
+  text-align: center;
+}
+.calendar-back,
+.calendar-forward {
+}
+.calendar-mode {
+  flex-grow: 1;
+}
+.calendar-display {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+.calendar-display ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.calendar-display li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+.calendar-days {
+  align-self: flex-start;
+}
+.calendar-days li { width: 14.28%; }
+.calendar-months li { width: 25%; }
+.calendar-years li { width: 20%; }
+.calendar-current a {
+    color: #00f;
+    font-weight: bold;
+  }
+html,
+body,
+.display {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

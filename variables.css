@@ -1,0 +1,14 @@
+$input-font-family: $uiFontFamily;
+$input-font-size: $uiFontSize;
+$input-height: calc($uiGrid * 2);
+$input-max-width: calc($uiGrid * 15);
+$input-bg-color: $uiBgColor;
+$input-color: $uiColor;
+$input-bg-focus-color: $uiBgFocusColor;
+$input-focus-color: $uiFocusColor;
+$input-label-color: $uiColor;
+$input-error-color: $uiErrorColor;
+$input-uppercase: $uiInputUppercase;
+$input-hover: $uiInputHover;
+$input-transition: $uiBaseTransition;
+$input-transition-duration: $uiBaseTransitionDuration;

@@ -1,0 +1,51 @@
+{
+  "name": "uc-input-date",
+  "version": "1.0.0",
+  "description": "Input Date Field UI Component",
+  "main": "index.js",
+  "scripts": {
+    "build": "fuller -v",
+    "dev": "fuller -vwz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unchainedui/input-date.git"
+  },
+  "keywords": [
+    "unchained",
+    "ui",
+    "browser",
+    "input",
+    "field",
+    "date",
+    "kiss"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com> (http://2dubs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unchainedui/input-date/issues"
+  },
+  "homepage": "https://github.com/unchainedui/input-date#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "fuller": "^0.3.3",
+    "fuller-dst-file": "^0.3.1",
+    "fuller-postcss": "^0.3.0",
+    "fuller-src-file": "^0.3.1",
+    "fuller-src-rollup": "^0.3.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-import": "^12.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^5.0.0"
+  },
+  "dependencies": {
+    "uc-compose": "^1.0.0",
+    "uc-dom": "^1.2.0",
+    "uc-input": "^2.0.0",
+    "uc-input-field": "^2.0.0",
+    "uc-calendar": "^1.0.0"
+  }
+}
