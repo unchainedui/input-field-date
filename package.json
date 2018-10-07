@@ -1,5 +1,5 @@
 {
-  "name": "uc-input-date",
+  "name": "uc-input-field-date",
   "version": "1.0.0",
   "description": "Input Date Field UI Component",
   "main": "index.js",
