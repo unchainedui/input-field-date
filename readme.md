@@ -28,6 +28,7 @@ Constructor options:
 * el – HTLMElement, parse all the information from the DOM element
 * **title** — string, title of the input
 * value — integer, timestamp in milliseconds or string, representing a date in a format recognized by the `Date.parse()` method
+* locale — a locale object. Defined as in [uc-calendar](https://github.com/unchainedui/calendar.git)
 * debounce – number, default 500ms. Debounce onChange calls
 * onChange — function, callback will be called when value is changed
 
@@ -35,7 +36,7 @@ Constructor options:
 
 #### value([val])
 
-if `val` is undefined returns current value, otherwise sets the value. The value is instance of the `Date` class.
+if `val` is undefined returns current value, otherwise sets the value. The value is an instance of the `Date` class.
 
 #### focus()
 
